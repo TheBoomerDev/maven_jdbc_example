@@ -1,8 +1,10 @@
 package ctbarbanza.com.jdbc.example01.model;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+@JsonPropertyOrder({ "ruedas", "marca", "modelo", "year", "vendido", "precio" })
 public class Coche {
 	
 	@Expose()
