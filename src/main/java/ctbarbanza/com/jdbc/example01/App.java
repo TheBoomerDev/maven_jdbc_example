@@ -27,16 +27,16 @@ public class App {
 		Gson gsonExpose = builder.create();
 		Gson gsonSinExpose = new Gson();
 		
-		String json = gson.toJson(Object);
+		String json = gsonSinExpose.toJson(Object);
 		
 		
 		// Ejemplos de transformación Json
-		int one = gson.fromJson("1", int.class);
-		Integer onei = gson.fromJson("1", Integer.class);
-		Long onel = gson.fromJson("1", Long.class);
-		Boolean bool = gson.fromJson("false", Boolean.class);
-		String str = gson.fromJson("\"abc\"", String.class);
-		String anotherStr = gson.fromJson("[\"abc\"]", String.class);
+		int one = gsonSinExpose.fromJson("1", int.class);
+		Integer onei = gsonSinExpose.fromJson("1", Integer.class);
+		Long onel = gsonSinExpose.fromJson("1", Long.class);
+		Boolean bool = gsonSinExpose.fromJson("false", Boolean.class);
+		String str = gsonSinExpose.fromJson("\"abc\"", String.class);
+		String anotherStr = gsonSinExpose.fromJson("[\"abc\"]", String.class);
 		
 		
 
